@@ -1,2 +1,2 @@
 # mensarius
-Simple budget management software
+This branch is used for Development documentaion
