@@ -14,6 +14,7 @@ Data is being stored in JSON files for convenience. This file describes data sch
         type: int
         sum: int
         currency: string
+        time: int
         note: string
         tags: string[]
     ]
@@ -32,6 +33,7 @@ Data is being stored in JSON files for convenience. This file describes data sch
       "type": 1,
       "sum": 300,
       "currency": 0,
+      "time": 1625058710,
       "note": "This is how i spent my money",
       "tags": [
         "food",
@@ -58,6 +60,7 @@ Data is being stored in JSON files for convenience. This file describes data sch
     + **type** - Either 0 or 1, defines if record is an expense or an income correspondingly
     + **sum** - An amount of money, spent or received
     + **currency** - Currency of the record, must correspond with of the elements in the currencies array, if user adds a new currency, it's being added to that array
+    + **time** - An automatic time stamp in Unix time format.
     + **note** - Note that user leaves about the record
     + **tags** - An array of tags for specific record, they must correspond with tags in the tags array, if user adds a new tag, it's being added to that array
 + **currencies** - An array of currencies, available for record marking, if currency doesn't exist, user can create one while adding the record
