@@ -43,3 +43,11 @@ Remember, that you are not alone, code should be slick and beautiful.
 ### The development itself
 It's not easy to develop something in a team, that's why all the tasks and plans will be described together, all the questions will be answered and all the concerns will be resolved.
 The point is to create something usefull and cool, get your portion of joy from the process and learn something new.
+Before contributing, please check out the style guide in STYLE.md of this branch.
+
+### Development structure
+The project consists of the main executable file, that executes other modules.
++ Interface - module has an event loop, in which all information is displayed and user input is being taken, the proper map of all the functions is described in the INTERFACE.md and displayed as a chart in the INTERFACE.png.
++ Parser - module is responsible for creating and maintaining the database schema and of course of quering or inerting the information into the database, the proper map of all the functions is described in the PARSER.md and displayed as a chart in the PARSER.png.
+The main directory also has a requirements.txt file, which has all the possible dependencies.
+All the development is being done in the dev branch and it's sub branches.
