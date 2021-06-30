@@ -24,11 +24,10 @@ When entering the data into specific book user can mark if record is an expense 
 Later, user can select the data and sort it via types and tags to display only the information he wants and export it in the desirable way. 
 
 ### Data storage
-For the beginning, regular JSON files are used to store information, that allows to access, insert and store information easily, as well as being flexible for the changes.
-Later on, more complicated ways to store the data, like a database, may be applied, for performance and safety reasons.
+For data storage, SQLite database is used, it stores everything locally, which allows to access, insert and store information easily, without spending a lot of resources, as well as being flexible for the changes.
 
 ### Parser
-This is one of the key components, this module will parse all the data from data files and transform them to the correct data types for further usage.
+This is one of the key components, this module will parse all the data from database and transform them to the correct data types for further usage.
 The important aspect is that the parser has to be reliable, so user's data won't be lost while reading, transforming or writing.
 Also, it should be pretty fast, because loading the data is probably one of the most resource consuming tasks.
 
