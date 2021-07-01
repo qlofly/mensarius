@@ -36,6 +36,9 @@ This is the frontend of the whole program, this module will display the informat
 Because the interface is not really minimalistic, the best way to build it is not the "one-line" approach, like in cat or grep, but a full interactive interface, that you can enter, do some stuff in it and then exit, like htop and vim.
 This interface should be fast, simple and easy to use, because simplicity and usability are the key components.
 
+### Utilities
+A module, that contains all the pieces of code, that are being called from time to time and can be shortened in simple functions.
+
 ### Tech stack
 For better and easier start, Python3 is the main technology we will be using.
 Remember, that you are not alone, code should be slick and beautiful.
@@ -49,6 +52,7 @@ Before contributing, please check out the style guide in STYLE.md of this branch
 The project consists of the main executable file, that executes other modules.
 + Interface - module has an event loop, in which all information is displayed and user input is being taken, the proper map of all the functions is described in the INTERFACE.md and displayed as a chart in the INTERFACE.png.
 + Parser - module is responsible for creating and maintaining the database schema and of course of quering or inerting the information into the database, the proper map of all the functions is described in the PARSER.md and displayed as a chart in the PARSER.png.
++ Utilities - module with small, utility functions, they can be added in the development process, when needed.
 
 The main directory also has a requirements.txt file, which has all the possible dependencies.
 All the development is being done in the dev branch and it's sub branches.
