@@ -1,4 +1,3 @@
 from interface import interface
 
-
-interface.helloMessage()
+# interface.helloMessage()
