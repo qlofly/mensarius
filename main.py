@@ -1,4 +1,4 @@
-from interface import test
+from interface import interface
 
-if __name__ == "__main__":
-    test.Test()
+
+interface.helloMessage()
